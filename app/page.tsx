@@ -28,93 +28,112 @@ const Page = () => {
 
   return (
     <React.Fragment >
-      <div className='bg-gradient-to-r from-[#1A202C] via-[#2D3748] to-[#4A5568]'>
-
-      <div className="h-[100vh] flex flex-col md:flex-row items-center justify-center px-4 bg-gradient-to-r from-[#1A202C] via-[#2D3748] to-[#4A5568]">
-      {/* Text Section */}
-      <motion.div
-        className="flex flex-col items-center md:items-start text-center md:text-left mb-6 md:mb-0 md:mr-8 space-y-3"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-      >
-        <motion.h1
-          className="text-2xl md:text-4xl font-bold text-white"
-          initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-        >
-          Hi There! 👋🏻
-        </motion.h1>
-        <motion.h1
-          className="text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#a259ff] to-[#fccc63]"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.0, ease: 'easeOut' }}
-        >
-          <p className="inline-block text-white">I'M</p> MUHAMMAD FARHAN
-        </motion.h1>
-        <motion.h1
-          className="text-xl md:text-3xl font-medium text-[#fccc63]"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-        >
-          Front-End Developer
-        </motion.h1>
-      </motion.div>
-
-      {/* Image Section */}
-      <motion.div
-        className="w-60 h-60 md:w-80 md:h-80 border-4 border-gradient-to-r from-[#a259ff] to-[#fccc63] rounded-full overflow-hidden shadow-lg"
-        initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.4, ease: 'easeOut' }}
-        whileHover={{ scale: 1.1,opacity:0.5 }}
+      <div
+      style={{ backgroundImage: `url('https://img.freepik.com/premium-photo/photo-studio-portrait-backdrop-background-painted-scratch-texture-dark-blue-cloud-night-with-spot-light-3d-rendering_187882-1036.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         
+       }}
+      className='bg-gradient-to-r from-[#f57d4d] via-[#5e0d0d] to-[#5e99ff]'>
 
-      >
-        <Image
-          src={HeroSectionImage}
-          alt="Hero Section"
-          width={300}
-          height={300}
-          className="object-cover w-full h-full"
-        />
-      </motion.div>
-    </div>
+      <div 
+  id='home' 
+  className="h-[100vh] flex flex-col md:flex-row items-center justify-center px-4 bg-cover bg-center" 
+   // Add your background image path here
+>
+  {/* Text Section */}
+  <motion.div
+    className="flex flex-col items-center md:items-start text-center md:text-left mb-6 md:mb-0 md:mr-8 space-y-3 bg-opacity-50  rounded p-4"
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1.2, ease: 'easeOut' }}
+  >
+    <motion.h1
+      className="text-2xl md:text-4xl font-bold text-white"
+      initial={{ y: -30, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
+      Hi There! 👋🏻
+    </motion.h1>
+    <motion.h1
+      className="text-3xl md:text-5xl font-bold   text-transparent bg-clip-text bg-gradient-to-r from-[#c05ae9]  to-[#b700ff]"
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 1.0, ease: 'easeOut' }}
+    >
+      <p className="inline-block text-white ">I'M</p> MUHAMMAD FARHAN
+    </motion.h1>
+    <motion.h1
+      className="text-xl md:text-4xl font-medium text-[#ba69c5]"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2, ease: 'easeOut' }}
+    >
+      Front-End Developer
+    </motion.h1>
+  </motion.div>
+
+  {/* Image Section */}
+  <motion.div
+  
+    className="w-60 h-60 md:w-80 md:h-80 border-4 border-gradient-to-r from-[#FF5C00] to-[#FFC700] rounded-full overflow-hidden shadow-lg"
+    initial={{ scale: 0.5, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 1.4, ease: 'easeOut' }}
+    whileHover={{ scale: 1.1, opacity: 0.8 }} // Slight opacity change on hover
+  >
+    <Image
+    
+      src={HeroSectionImage}
+      alt="Hero Section"
+      width={300}
+      height={300}
+      className="object-cover w-full h-full"
+    />
+  </motion.div>
+</div>
+
+
 
 
 
       <div className=''>
 
         {/* Hero Section */}
-        <h1 className='text-6xl m-10 font-bold text-center text-white  '>About</h1>
+        <h1 className='text-6xl m-5  font-bold text-center text-white  '>About</h1>
       <div className="h-[80vh] bg-gradient-to-r gap-6 from-[#1A202C] via-[#2D3748] to-[#4A5568] flex flex-col md:flex-row items-center justify-center px-4">
        
        {/* Image Section */}
        <motion.div 
+      //  style={{ backgroundImage: `url('https://wallpapers.com/images/hd/dark-purple-background-8vuu2ttp19yixcp9.jpg')`,
+      //   backgroundSize: 'cover',
+      //   backgroundPosition: 'center',
+      //   backgroundRepeat: 'no-repeat',
+        
+      //  }}
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.4, ease:'linear' }}
         whileHover={{ scale: 0.9,opacity:0.5 }}
-       className="w-96 h-96 md:w-96 md:h-96  my-5 border-4 flex items-center justify-center border-[#ae8eb3] rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:scale-105">
+       className="w-96 h-96 md:w-96 md:h-96  my-5 flex items-center justify-center border-[#646262] rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:scale-105">
           <Image
             src={heroSectionImage}
             alt="Hero Section"
             width={9000}
             height={9000}
-            className="object-cover rounded-xl  w-[80%] h-[80%]"
+            className="object-cover rounded-xl  w-[90%] h-[90%]"
             />
         </motion.div>
       
        
         {/* Text Section */}
         <div className="flex flex-col items-center md:items-start text-center py-10 md:text-left  md:mb-0 md:mr-8 space-y-6 animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl font-bold text-white ">
-            <span className="text-[#ba69c5]">Know How</span> I'M
+          <h1 className="text-4xl md:text-6xl font-bold text-white  ">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF5C00] to-[#FFC700] ">Know How</span> I'M
           </h1>
-          <p className="text-base md:text-lg font-medium text-[#ba69c5] max-w-xl">
+          <p className="text-base md:text-lg font-medium text-[#ffffff] max-w-xl">
           I am proud to be a student in GIAIC Batch 01 and SMIT Batch 11, where I am deeply focused on mastering Generative AI, the MERN stack, and React Native for mobile app development. With a passion for creating dynamic web applications and immersive mobile experiences, I am eager to sharpen my expertise and make a lasting impact through innovative projects in the tech industry          </p>
         </div>
 </div>
@@ -122,7 +141,7 @@ const Page = () => {
 
       {/* Skills Section */}
       <div className="bg-gray-200 py-20 px-4 md:px-10  ">
-        <h2 className="text-3xl md:text-6xl font-bold text-[#9b39a8] text-center mb-10 ">My Skills</h2>
+        <h2 className="text-3xl md:text-6xl font-bold  text-center mb-10  text-transparent bg-clip-text bg-gradient-to-r from-[#FF5C00] to-[#FFC700]">My Skills</h2>
         
         <div className="grid mt-20 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center items-center text-center">
           {/* Skill - HTML */}
@@ -195,7 +214,7 @@ const Page = () => {
             </div>
 
             <div className=" text-white py-12">
-            <h1 className='text-6xl m-10 font-bold text-center text-white p-10'>Contact</h1>
+            <h1 className='text-6xl m-10 font-bold text-center  p-10 text-transparent bg-clip-text bg-gradient-to-r from-[#FF5C00] to-[#FFC700]'>Contact</h1>
 
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">

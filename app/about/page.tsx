@@ -5,109 +5,100 @@ import heroSectionImage from '../asset/Untitled_design__4_-removebg.png'
 const Page = () => {
   return (
     <React.Fragment>
-      <div className=''>
+      <div className='min-h-screen bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300'>
+      
+        {/* About Section */}
+        <h1 className='text-5xl md:text-6xl font-bold text-center text-gray-800 p-10'>
+          About
+        </h1>
 
-<h1 className='text-6xl m-10 font-bold text-center text-white   p-10'>About</h1>
-<div className="h-[80vh] bg-gradient-to-r gap-6 from-purple-800 to-purple-950 flex flex-col md:flex-row items-center justify-center px-4">
+        <div className="h-[80vh] flex flex-col md:flex-row items-center justify-center px-6 md:px-20 space-y-10 md:space-y-0 gap-10">
+        
+          {/* Image Container */}
+          <div className="w-96 h-96 md:w-80 md:h-80 border border-gray-400 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-500">
+            <Image
+              src={heroSectionImage}
+              alt="Hero Section"
+              width={9000}
+              height={9000}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          
+          {/* Text Section */}
+          <div className="text-center md:text-left space-y-6">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+              <span className="text-blue-600">Know How</span> I'M
+            </h1>
+            <p className="text-lg md:text-xl font-medium text-gray-700 max-w-lg">
+              I am in GIAIC Batch 01 and SMIT Batch 11, focusing on Generative AI, MERN stack, and React Native for mobile app development. Excited to enhance my skills in building dynamic web applications and mobile experiences.
+            </p>
+          </div>
+        </div>
 
-<div className="w-96 h-96 md:w-80 md:h-80  my-10 border-4 flex items-center justify-center border-[#ae8eb3] rounded-2xl overflow-hidden shadow-xl transition-transform transform hover:scale-105">
-  <Image
-    src={heroSectionImage}
-    alt="Hero Section"
-    width={9000}
-    height={9000}
-    className="object-cover  w-[100%] h-[100%]"
-    />
-</div>
+        {/* Skills Section */}
+        <div className="bg-white py-16 px-6 md:px-20 mt-10 shadow-lg rounded-lg">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 text-center mb-10">
+            My Skills
+          </h2>
 
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center items-center text-center">
+            
+            {/* Skill Item */}
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-orange-500 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-white text-2xl font-bold">HTML</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">HTML5</p>
+            </div>
 
-<div className="flex flex-col items-center md:items-start text-center md:text-left mb- md:mb-0 md:mr-8 space-y-6 animate-fade-in-up">
-  <h1 className="text-4xl md:text-6xl font-bold text-white ">
-    <span className="text-[#ba69c5]">Know How</span> I'M
-  </h1>
-  <p className="text-base md:text-lg font-medium text-[#ba69c5] max-w-xl">
-  I am in GIAIC Batch 01 and also SMIT Batch 11 Student, I am focusing on the Generative AI, MERN stack and React Native for mobile app development. I am excited to enhance my skills in building dynamic web applications and engaging mobile experiences, preparing myself to create impactful projects in the tech industry.
-  </p>
-</div>
-</div>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-blue-500 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-white text-2xl font-bold">CSS</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">CSS3</p>
+            </div>
 
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-yellow-400 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-black text-2xl font-bold">JS</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">JavaScript</p>
+            </div>
 
-<div className="bg-white py-10 px-4 md:px-10 mt-10">
-<h2 className="text-3xl md:text-6xl font-bold text-purple-800 text-center mb-10 ">My Skills</h2>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-white text-2xl font-bold">TS</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">TypeScript</p>
+            </div>
 
-<div className="grid mt-10 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center items-center text-center">
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#f06529] flex items-center justify-center">
-      <span className="text-white text-2xl font-bold">HTML</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">HTML5</p>
-  </div>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-black text-2xl font-bold">FB</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">Firebase</p>
+            </div>
 
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#2965f1] flex items-center justify-center">
-      <span className="text-white text-2xl font-bold">CSS</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">CSS3</p>
-  </div>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-blue-300 flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-black text-2xl font-bold">React</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">ReactJS</p>
+            </div>
 
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#f7df1e] flex items-center justify-center">
-      <span className="text-black text-2xl font-bold">JS</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">JavaScript</p>
-  </div>
+            <div className="flex flex-col items-center">
+              <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center shadow-md hover:shadow-xl transition-shadow">
+                <span className="text-white text-2xl font-bold">Next.js</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-2">Next.js</p>
+            </div>
+          </div>
+        </div>
 
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#3178c6] flex items-center justify-center">
-      <span className="text-white text-2xl font-bold">TS</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">TypeScript</p>
-  </div>
-
-  {/* Skill - Firebase */}
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#FFCB2B] flex items-center justify-center">
-      <span className="text-black text-2xl font-bold">FB</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">Firebase</p>
-  </div>
-
-  {/* Skill - ReactJS */}
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-[#61dafb] flex items-center justify-center">
-      <span className="text-black text-2xl font-bold">React</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">ReactJS</p>
-  </div>
-
-  {/* Skill - Next.js */}
-  <div className="flex flex-col items-center">
-    <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center">
-      <span className="text-white text-2xl font-bold">Next.js</span>
-    </div>
-    <p className="text-lg text-gray-700 mt-2">Next.js with TypeScript</p>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+      </div>
     </React.Fragment>
   )
 }
 
-export default Page
+export default Page  

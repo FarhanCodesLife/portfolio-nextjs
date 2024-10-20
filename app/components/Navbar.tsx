@@ -7,7 +7,14 @@ const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <nav className="bg-gradient-to-r border-b-2 border-[#f06529] from-[#421a47] to-[#7e45ad] shadow-lg dark:bg-gray-900 transition-all duration-500">
+        <nav
+        style={{ backgroundImage: `url('https://media.istockphoto.com/id/1452775956/vector/tech-background-big-data-concept-with-triangles-dark-modern-wallpaper-abstract-futuristic.jpg?s=612x612&w=0&k=20&c=tF_UYAdvZvNqytkzd6kY3SSQvHgjkvRMKDkBVAKg3q0=')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            
+           }}
+        className="bg-gradient-to-r border-b-2 border-[#ffffff] from-[#f0754f] via-[#1c1c20] to-[#6f39b6] shadow-lg dark:bg-gray-900 transition-all duration-500">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -50,7 +57,7 @@ const Navbar: React.FC = () => {
                             whileHover={{ scale: 1.1 }}
                             className="transition-colors duration-300"
                         >
-                            <Link href="/" className="block text-white rounded hover:bg-transparent md:hover:text-[#ffccff] md:p-0 dark:text-white dark:hover:text-blue-400">
+                            <Link href="#home" className="block text-white rounded hover:bg-transparent md:hover:text-[#ffccff] md:p-0 dark:text-white dark:hover:text-blue-400">
 
                                 Home
 
