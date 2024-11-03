@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Image from "next/image";
+import background from './asset/65d5bfa43c1e3f4eee92efd4_65ced355bb7642d3cbd8fc5c-a5c83c114fa5e7903a67ef0168f6f9d0.jpeg'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,11 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gradient-to-r from-purple-800 to-purple-950">
+    <html lang="en" className="bg-gradient-to-br from-gray-800 to-black">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar/>
+        <Image src={background} alt="background" className="absolute inset-0 w-full h-full object-cover brightness-50 blur-md" />
         {children}
       </body>
     </html>
