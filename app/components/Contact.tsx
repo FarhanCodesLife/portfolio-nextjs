@@ -13,7 +13,6 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your form submission logic here
     console.log(formData);
   };
 
