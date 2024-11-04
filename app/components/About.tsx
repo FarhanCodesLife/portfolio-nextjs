@@ -21,7 +21,7 @@ const About = () => {
                     className="text-center mb-12"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        About <span className="text-[#00f2fe]">Me</span>
+                        About <span className="text-[#fe9800]">Me</span>
                     </h2>
                     <h3 className="text-xl text-gray-400 mb-8">
                         Frontend Developer!
@@ -36,17 +36,21 @@ const About = () => {
                         transition={{ duration: 0.6 }}
                         className="relative"
                     >
-                        <div className="relative w-full max-w-[400px] h-[400px] mx-auto">
-                            <div className="absolute inset-0 hexagon-shape neon-border">
+                        <div className="relative rounded-2xl shadow-[0_0_15px_rgba(254,152,0,0.5)] overflow-hidden w-full max-w-[350px] h-[400px] mx-auto">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#fe9800]/20 to-transparent animate-gradient"></div>
+                            <div className="absolute inset-0   rounded-2xl animate-pulse"></div>
+                            <div className="absolute inset-[3px] rounded-2xl overflow-hidden">
+                                <div className="absolute p-10 sj inset-0 bg-gradient-to-r from-[#fe9800]/10 via-transparent to-[#fe9800]/30 animate-shine"></div>
                                 <Image
-
                                     src={aboutimage}
                                     alt="About Me"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover p-2 rounded-2xl relative z-10"
                                 />
                             </div>
+                            <div className="absolute -inset-1 bg-gradient-to-r from-[#fe9800] to-[#fe9800]/50 blur-xl opacity-30 animate-pulse"></div>
                         </div>
+                        
                     </motion.div>
 
                     {/* Content Section */}
@@ -69,17 +73,17 @@ const About = () => {
                                 <div key={skill.name} className="space-y-2">
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-2 text-gray-300">
-                                            <span className="text-[#00f2fe]">{skill.icon}</span>
+                                            <span className="text-[#fe9800]">{skill.icon}</span>
                                             {skill.name}
                                         </div>
-                                        <span className="text-[#00f2fe]">{skill.level}%</span>
+                                        <span className="text-[#fe9800]">{skill.level}%</span>
                                     </div>
                                     <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
                                         <motion.div
                                             initial={{ width: 0 }}
                                             whileInView={{ width: `${skill.level}%` }}
                                             transition={{ duration: 1, delay: index * 0.1 }}
-                                            className="h-full bg-[#00f2fe] rounded-full"
+                                            className="h-full bg-[#fe9800] rounded-full"
                                         />
                                     </div>
                                 </div>
@@ -87,11 +91,26 @@ const About = () => {
                         </div>
 
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{
+                                scale: 1.05,
+                                backgroundImage: "linear-gradient(to right, #fe9800 50%, transparent 50%)",
+                                backgroundSize: "200% 100%",
+                                backgroundPosition: "right bottom"
+                            }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-transparent border-2 border-[#00f2fe] text-[#00f2fe] 
-                                px-8 py-3 rounded-full hover:bg-[#00f2fe] hover:text-white 
-                                transition-all duration-300 shadow-[0_0_15px_rgba(0,242,254,0.5)]"
+                            transition={{
+                                duration: 0.3,
+                                backgroundPosition: {
+                                    duration: 0.3,
+                                    ease: "easeOut"
+                                }
+                            }}
+                            className="relative bg-transparent border-2 border-[#fe9800] text-[#fe9800]
+                                px-8 py-3 rounded-full hover:text-white overflow-hidden
+                                transition-colors duration-300 shadow-[0_0_15px_rgba(254,152,0,0.5)]
+                                before:content-[''] before:absolute before:top-0 before:left-0 
+                                before:w-0 before:h-full before:bg-[#fe9800] before:transition-all
+                                before:duration-300 hover:before:w-full before:-z-10"
                         >
                             Read More
                         </motion.button>

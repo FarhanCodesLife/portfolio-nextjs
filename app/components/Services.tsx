@@ -31,7 +31,7 @@ const Services = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-[#00f2fe]">Services</span>
+            Our <span className="text-[#fe9800]">Services</span>
           </h2>
         </motion.div>
 
@@ -44,7 +44,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-secondary p-6 rounded-lg hover:neon-border transition-all duration-300"
             >
-              <div className="text-[#00f2fe] mb-4">
+              <div className="text-[#fe9800] mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
@@ -52,7 +52,7 @@ const Services = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-4 text-[#00f2fe] hover:underline"
+                className="mt-4 text-[#fe9800] hover:underline"
               >
                 Learn More
               </motion.button>

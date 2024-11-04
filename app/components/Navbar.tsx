@@ -34,7 +34,7 @@ const Navbar = () => {
                         href="/" 
                         className="text-2xl font-bold text-white"
                     >
-                        Port<span className="text-[#00f2fe]">folio.</span>
+                        Port<span className="text-[#fe9800]">folio.</span>
                     </Link>
 
                     {/* Desktop Menu */}
@@ -46,13 +46,13 @@ const Navbar = () => {
                                 className={`relative text-sm font-medium transition-colors duration-300 
                                     group ${
                                         activeLink === link.toLowerCase() 
-                                            ? 'text-[#00f2fe]' 
-                                            : 'text-white hover:text-[#00f2fe]'
+                                            ? 'text-[#fe9800]' 
+                                            : 'text-white hover:text-[#fe9800]'
                                     }`}
                                 onClick={() => setActiveLink(link.toLowerCase())}
                             >
                                 {link}
-                                <span className={`absolute -bottom-2 left-0 w-full h-0.5 bg-[#00f2fe] transform origin-left scale-x-0 
+                                <span className={`absolute -bottom-2 left-0 w-full h-0.5 bg-[#fe9800] transform origin-left scale-x-0 
                                     transition-transform duration-300 group-hover:scale-x-100 ${
                                         activeLink === link.toLowerCase() ? 'scale-x-100' : ''
                                     }`}>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden text-white hover:text-[#00f2fe] transition-colors"
+                        className="md:hidden text-white hover:text-[#fe9800] transition-colors"
                     >
                         <svg 
                             className="w-6 h-6" 
@@ -107,8 +107,8 @@ const Navbar = () => {
                                     href={`#${link.toLowerCase()}`}
                                     className={`text-sm font-medium transition-colors duration-300 
                                         ${activeLink === link.toLowerCase() 
-                                            ? 'text-[#00f2fe]' 
-                                            : 'text-white hover:text-[#00f2fe]'
+                                            ? 'text-[#fe9800]' 
+                                            : 'text-white hover:text-[#fe9800]'
                                         }`}
                                     onClick={() => {
                                         setActiveLink(link.toLowerCase());

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #00f2fe;
+  --primary-color: #fe9800;
+  /* --primary-color: #00f2fe; */
   --background: #1A1A1A;
   --card-bg: #2A2A2A;
 }
@@ -14,31 +15,29 @@ body {
 }
 
 .rounded-hexagon-wrapper {
-  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: relative;
   background: #1a1a1a;
 }
 
 .rounded-hexagon-container {
-  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .rounded-hexagon-border {
   position: absolute;
   inset: 0;
   background: transparent;
-  border: 2px solid var(--primary-color);
-  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+  border: 3px solid #fe9800;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .rounded-hexagon-glow {
   position: absolute;
   inset: -2px;
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 242, 254, 0.3) 0%,
-    transparent 70%
-  );
+  background: transparent;
+  border: 3px solid #fe9800;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   filter: blur(15px);
   animation: glowPulse 3s ease-in-out infinite;
 }

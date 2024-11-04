@@ -45,27 +45,48 @@ const Contact = () => {
           >
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
+              <motion.div 
+                className="flex items-center gap-4 p-4 rounded-lg hover:bg-[#fe9800]/10 transition-all duration-300"
+                whileHover={{ 
+                  scale: 1.05,
+                  color: "#fe9800"
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
                 <FaEnvelope className="text-primary text-2xl" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-400">your.email@example.com</p>
+                  <p className="text-gray-400 group-hover:text-[#fe9800]">farhansmit0318@gmail.com</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4">
+              </motion.div>
+              <motion.div 
+                className="flex items-center gap-4 p-4 rounded-lg hover:bg-[#fe9800]/10 transition-all duration-300"
+                whileHover={{ 
+                  scale: 1.05,
+                  color: "#fe9800"
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
                 <FaPhone className="text-primary text-2xl" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-gray-400">+1 234 567 890</p>
+                  <p className="text-gray-400 group-hover:text-[#fe9800]">+92 318 212 7256</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4">
+              </motion.div>
+              <motion.div 
+                className="flex items-center gap-4 p-4 rounded-lg hover:bg-[#fe9800]/10 transition-all duration-300"
+                whileHover={{ 
+                  scale: 1.05,
+                  color: "#fe9800"
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
                 <FaMapMarkerAlt className="text-primary text-2xl" />
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-gray-400">Your City, Country</p>
+                  <p className="text-gray-400 group-hover:text-[#fe9800]">Karachi Pakistan</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -74,14 +95,14 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-darker">
               <div className="grid md:grid-cols-2 gap-6">
                 <input
                   type="text"
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="bg-secondary/10 text-black rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#fe9800]"
                   onChange={handleChange}
                 />
                 <input
@@ -89,7 +110,7 @@ const Contact = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#fe9800]"
                   onChange={handleChange}
                 />
               </div>
@@ -98,7 +119,7 @@ const Contact = () => {
                 name="subject"
                 placeholder="Subject"
                 required
-                className="w-full bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#fe9800]"
                 onChange={handleChange}
               />
               <textarea
@@ -106,12 +127,12 @@ const Contact = () => {
                 placeholder="Your Message"
                 required
                 rows={6}
-                className="w-full bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full bg-secondary/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#fe9800]"
                 onChange={handleChange}
               ></textarea>
               <button
                 type="submit"
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full w-full"
+                className="bg-[#fe9800]  hover:bg-[#fe9800]/90 text-white px-8 py-3 rounded-full "
               >
                 Send Message
               </button>
