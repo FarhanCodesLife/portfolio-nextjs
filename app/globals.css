@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-color: #00f2fe;
+  --background: #1A1A1A;
+  --card-bg: #2A2A2A;
+}
+
+body {
+  background-color: var(--background);
+  color: white;
+}
+
+.rounded-hexagon-wrapper {
+  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+  position: relative;
+  background: #1a1a1a;
+}
+
+.rounded-hexagon-container {
+  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+}
+
+.rounded-hexagon-border {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  clip-path: path('M70 0H230L300 130L230 260H70L0 130L70 0Z');
+}
+
+.rounded-hexagon-glow {
+  position: absolute;
+  inset: -2px;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 242, 254, 0.3) 0%,
+    transparent 70%
+  );
+  filter: blur(15px);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.5; filter: blur(15px); }
+  50% { opacity: 1; filter: blur(20px); }
+  100% { opacity: 0.5; filter: blur(15px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rounded-hexagon-wrapper,
+  .rounded-hexagon-container,
+  .rounded-hexagon-border {
+    clip-path: path('M52.5 0H172.5L225 97.5L172.5 195H52.5L0 97.5L52.5 0Z');
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
