@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #00f2fe;    /* Neon Blue/Cyan */
+  --primary: #fe6600;    /* Neon Blue/Cyan */
+  /* --primary: #00f2fe;    Neon Blue/Cyan */
   --secondary: #1a1a1a;  /* Dark Gray */
   --dark: #111111;       /* Almost Black */
   --darker: #0a0a0a;     /* Darker Black */
