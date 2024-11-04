@@ -117,7 +117,8 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <motion.div
-          variants={fadeInVariant('right', 0.3)}
+          variants={fadeInVariant
+            ('right', 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
