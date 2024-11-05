@@ -2,7 +2,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+import { useSession } from "next-auth/react";
 
 // Define project type
 interface Project {
@@ -43,6 +45,7 @@ const projectsData: Project[] = [
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
+  const { data: session } = useSession();
   
   // Get unique categories
   const categories = ['All', ...Array.from(new Set(projectsData.map(project => project.category)))];
@@ -133,8 +136,9 @@ const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative px-4 py-2 border-2 border-[#fe9800] text-black font-medium rounded-full hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-[#fe9800]/30 transform hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:bg-blue hover:border-[#00f2fe] animate-pulse hover:animate-none"
+                        className="relative px-4 py-2 border-2 border-[#fe9800] text-black font-medium rounded-full hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-[#fe9800]/30 transform hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:bg-blue hover:border-[#00f2fe] animate-pulse hover:animate-none flex items-center gap-2"
                       >
+                        <FaGithub className="text-sm" />
                         GitHub
                       </a>
                     )}
@@ -144,6 +148,23 @@ const Projects = () => {
             ))}
           </div>
         </AnimatePresence>
+      </div>
+      <div className="flex gap-4 justify-center mt-12">
+        {session ? (
+          <Link 
+            href="/add-project"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Add New Project
+          </Link>
+        ) : (
+          <Link 
+            href="/login"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Login to Add Project
+          </Link>
+        )}
       </div>
     </section>
   );
