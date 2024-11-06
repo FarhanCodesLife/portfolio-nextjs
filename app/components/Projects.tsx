@@ -40,7 +40,6 @@ const projectsData: Project[] = [
     liveLink: "https://example.com",
     githubLink: "https://github.com/yourusername/project"
   },
-  // Add more projects as needed
 ];
 
 const Projects = () => {
