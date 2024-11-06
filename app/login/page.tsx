@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/navigation';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase/config';
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({
@@ -19,10 +21,18 @@ const LoginPage = () => {
     setLoading(true);
 
     try {
-      await login(credentials.email, credentials.password);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        credentials.email,
+        credentials.password
+      );
+      const user = userCredential.user;
       router.push('/add-project');
-    } catch (err) {
-      setError('Invalid email or password');
+    } catch (err: any) {
+      const errorMessage = err.code === 'auth/invalid-credential' 
+        ? 'Invalid email or password'
+        : 'An error occurred during sign in';
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -46,13 +56,14 @@ const LoginPage = () => {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className=" text-sm font-medium mb-1">
                 Email address
               </label>
               <input
                 id="email"
                 name="email"
                 type="email"
+                placeholder="Email"
                 required
                 className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 value={credentials.email}
@@ -68,6 +79,7 @@ const LoginPage = () => {
                 id="password"
                 name="password"
                 type="password"
+                placeholder="Password"
                 required
                 className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 value={credentials.password}
