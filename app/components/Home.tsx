@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useCallback } from 'react';
-import profileImage from '../asset/office-worker-2d-cartoon-illustraton-white-background_889056-33111.avif';
+import profileImage from '../asset/home.gif';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 // Animation variants
@@ -77,50 +77,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#1A1A1A] via-[#151515] to-[#0F0F0F] text-white overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-b from-[#000000] via-[#1f1f1f] to-[#303030] text-white overflow-hidden">
       {/* Navigation - Uncomment and update */}
-      <motion.nav 
-        initial="initial"
-        animate="animate"
-        variants={animationVariants.navAnimation}
-        className="container mx-auto py-6 px-4"
-      >
-        <div className="flex justify-between items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5 }}
-            className="text-2xl font-bold"
-          >
-            Portfolio<span className="text-[#fe9800]">.</span>
-          </motion.div>
-          <div className="hidden md:flex space-x-8">
-            {navigationItems.map((item, index) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  delay: index * 0.1 + 0.5,
-                  type: "spring",
-                  bounce: 0.4
-                }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <Link 
-                  href={`/${item.toLowerCase()}`}
-                  className={`${item === 'Home' ? 'text-[#fe9800]' : 'hover:text-[#fe9800] transition-colors duration-300'}`}
-                >
-                  {item}
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.nav>
-
+     
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 grid md:grid-cols-2 gap-8 items-center">
+      <section className="container m-20 mx-auto px-4 py-20 grid md:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <motion.div
           variants={animationVariants.fadeIn('right', 0.3)}
@@ -250,7 +211,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
           className="relative"
         >
-          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] mx-auto">
+          <div className="relative w-[300px]  h-[300px] md:w-[500px] md:h-[400px] mx-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ 
@@ -266,7 +227,7 @@ export default function Home() {
               className="absolute inset-0 bg-[#fe9800] blur-[100px]"
             />
             
-            <div className="relative w-full h-full rounded-hexagon-wrapper">
+            <div className="relative w-full h-full rounded-hexaon-wrapper">
               <motion.div 
                 initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -276,13 +237,13 @@ export default function Home() {
                   type: "spring",
                   bounce: 0.4
                 }}
-                className="absolute inset-[3px] overflow-hidden rounded-hexagon-container"
+                className="absolute rounded-2xl inset-[3px] overflow-hidden rounded-hexgon-contain"
               >
                 <Image
                   src={profileImage}
                   alt="Profile"
                   fill
-                  className="object-cover scale-110"
+                  className="object-fill bg-transparent rounded-2xl scale-"
                   priority
                 />
               </motion.div>
@@ -290,10 +251,11 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
-                className="absolute inset-0 rounded-hexagon-border"
+                className="absolute bg-transparent  inset-0 rounded-exagon-border"
               >
                 <motion.div 
                   animate={{ 
+                    
                     boxShadow: [
                       '0 0 20px rgba(0, 242, 254, 0.3)',
                       '0 0 40px rgba(0, 242, 254, 0.5)',
@@ -305,7 +267,7 @@ export default function Home() {
                     repeat: Infinity,
                     repeatType: "reverse"
                   }}
-                  className="absolute inset-0 rounded-hexagon-glow"
+                  className="absolute rounded-2xl  inset-0 rounded-heagon-glow"
                 />
               </motion.div>
             </div>

@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaCode, FaServer, FaMobile, FaDatabase } from 'react-icons/fa';
-import aboutimage from '../asset/Untitled_design__4_-removebg.png'
+import aboutimage from '../asset/IMG_20240907_181510_938~3.jpg'
 const About = () => {
     const skills = [
         { name: 'Frontend Development', icon: <FaCode />, level: 90 },

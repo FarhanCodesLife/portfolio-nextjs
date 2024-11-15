@@ -15,7 +15,7 @@ const page = () => {
       <About />
       <Services />
       <Projects />
-      <AddProject />
+      {/* <AddProject /> */}
       <Contact />
     </main>
   )

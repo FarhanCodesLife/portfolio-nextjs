@@ -29,14 +29,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-gradient-to-br from-gray-800 to-black">
+    <html lang="en" className="">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
           <AuthProvider>
-            <Navbar />
-            <Image src={background} alt="background" className="absolute inset-0 w-full h-full object-cover brightness-50 blur-md" />
+            {/* <Navbar /> */}
+            {/* <Image src={background} alt="background" className="absolute inset-0 w-full h-full object-cover brightness-50 blur-md" /> */}
             {children}
           </AuthProvider>
         </Providers>
