@@ -23,8 +23,8 @@ const About = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         About <span className="text-[#fe9800]">Me</span>
                     </h2>
-                    <h3 className="text-xl text-gray-400 mb-8">
-                        Frontend Developer!
+                    <h3 className="text-2xl text-gray-400 mb-8">
+                        Frontend Developer
                     </h3>
                 </motion.div>
 
@@ -34,9 +34,9 @@ const About = () => {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="relative"
+                        className="relative "
                     >
-                        <div className="relative rounded-2xl shadow-[0_0_15px_rgba(254,152,0,0.5)] overflow-hidden w-full max-w-[350px] h-[400px] mx-auto">
+                        <div className="relative d rounded-2xl shadow-[0_0_15px_rgba(254,152,0,0.5)] overflow-hidden w-full max-w-[350px] h-[400px] mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#fe9800]/20 to-transparent animate-gradient"></div>
                             <div className="absolute inset-0   rounded-2xl animate-pulse"></div>
                             <div className="absolute inset-[3px] rounded-2xl overflow-hidden">

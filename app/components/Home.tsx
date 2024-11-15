@@ -209,9 +209,9 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative"
+          className="relative mt-10"
         >
-          <div className="relative w-[300px]  h-[300px] md:w-[500px] md:h-[400px] mx-auto">
+          <div className="relative w-[300px]   h-[300px] md:w-[500px] md:h-[400px] mx-auto ">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ 

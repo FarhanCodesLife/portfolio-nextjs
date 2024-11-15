@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { useSession } from "next-auth/react";
+import image3 from "@/app/asset/maxresdefault.jpg"
+import image2 from "@/app/asset/images.jpeg"
 
 // Define project type
 interface Project {
@@ -12,7 +14,7 @@ interface Project {
   title: string;
   description: string;
   category: string;
-  image: string;
+  image: any;
   technologies: string[];
   liveLink?: string;
   githubLink?: string;
@@ -25,7 +27,7 @@ const projectsData: Project[] = [
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React and Node.js",
     category: "Web Development",
-    image: "/projects/ecommerce.jpg", // Add your image path
+    image: image3, // Add your image path
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     liveLink: "https://example.com",
     githubLink: "https://github.com/yourusername/project"
@@ -35,7 +37,7 @@ const projectsData: Project[] = [
     title: "Mobile Banking App",
     description: "React Native mobile banking application",
     category: "Mobile Development",
-    image: "/projects/banking.jpg",
+    image: image2,
     technologies: ["React Native", "Redux", "Firebase"],
     liveLink: "https://example.com",
     githubLink: "https://github.com/yourusername/project"
