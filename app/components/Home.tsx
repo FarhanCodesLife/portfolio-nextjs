@@ -7,7 +7,6 @@ import { useCallback } from 'react';
 import profileImage from '../asset/home.gif';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-// Animation variants
 const animationVariants = {
   fadeIn: (direction: 'up' | 'down' | 'left' | 'right', delay: number) => ({
     hidden: {
