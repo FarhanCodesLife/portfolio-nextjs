@@ -17,6 +17,8 @@ import image8 from "@/app/asset/quiz.png"
 import image9 from "@/app/asset/buy and sell.png"
 import image10 from "@/app/asset/expance.png"
 import image11 from "@/app/asset/snp.png"
+import image12 from "@/app/asset/images.jpeg"
+import image13 from "@/app/asset/maxresdefault.jpg"
 
 // import image2 from "@/app/asset/images.jpeg"
 
@@ -149,7 +151,7 @@ const projectsData: Project[] = [
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React and Node.js",
     category: "Web Development",
-    image: image3, // Add your image path
+    image: image12, // Add your image path
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     liveLink: "https://example.com",
     githubLink: "https://github.com/yourusername/project"
@@ -159,7 +161,7 @@ const projectsData: Project[] = [
     title: "Mobile Banking App",
     description: "React Native mobile banking application",
     category: "Mobile Development",
-    image: image2,
+    image: image13,
     technologies: ["React Native", "Redux", "Firebase"],
     liveLink: "https://example.com",
     githubLink: "https://github.com/yourusername/project"

@@ -87,7 +87,7 @@ const About = () => {
                             ))}
                         </div>
 
-                        {/* Skills Section for Frontend Development */}
+                        {/* Skills Section for Frontend Development
                         <div className="space-y-4">
                             <h4 className="text-xl font-bold text-gray-300">Frontend Development Skills</h4>
                             <ul className="list-disc list-inside text-gray-300">
@@ -98,7 +98,7 @@ const About = () => {
                                 <li>Responsive Design</li>
                                 <li>Version Control (Git)</li>
                             </ul>
-                        </div>
+                        </div> */}
 
                         <motion.button
                             whileHover={{
