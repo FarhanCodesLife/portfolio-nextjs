@@ -169,7 +169,9 @@ export default function Home() {
               </motion.a>
             ))}
           </motion.div>
+          
           <motion.button
+          
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ 
@@ -198,7 +200,10 @@ export default function Home() {
                      before:bg-white before:opacity-20 before:transform before:translate-x-[-100%]
                      hover:before:translate-x-[100%] before:transition-transform before:duration-500"
           >
-            Download CV
+           <a href="https://drive.google.com/file/d/1XDJNu2s1YS0fia1olcid5dnoLKjKwJfq/view">
+            
+              Download CV
+            </a> 
           </motion.button>
         </motion.div>
 

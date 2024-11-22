@@ -5,10 +5,10 @@ import { FaCode, FaServer, FaMobile, FaDatabase } from 'react-icons/fa';
 import aboutimage from '../asset/IMG_20240907_181510_938~3.jpg'
 const About = () => {
     const skills = [
-        { name: 'Frontend Development', icon: <FaCode />, level: 90 },
-        { name: 'Backend Development', icon: <FaServer />, level: 85 },
-        { name: 'Mobile Development', icon: <FaMobile />, level: 80 },
-        { name: 'Database Management', icon: <FaDatabase />, level: 85 },
+        { name: 'Frontend Development', icon: <FaCode />, level: 95 },
+        { name: 'Backend Development', icon: <FaServer />, level: 60 },
+        { name: 'Mobile Development', icon: <FaMobile />, level: 85 },
+        { name: 'Database Management', icon: <FaDatabase />, level: 70 },
     ];
 
     return (
@@ -50,7 +50,7 @@ const About = () => {
                             </div>
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#fe9800] to-[#fe9800]/50 blur-xl opacity-30 animate-pulse"></div>
                         </div>
-                        
+
                     </motion.div>
 
                     {/* Content Section */}
@@ -61,10 +61,7 @@ const About = () => {
                         className="space-y-6"
                     >
                         <p className="text-gray-300 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium 
-                            dolores explicabo nulla voluptate vero, eveniet vel voluptatibus 
-                            exercitationem ducimus rerum quos ratione minima veniam quo corporis 
-                            laboriosam nam quasi necessitatibus.
+                            Im Muhammad Farhan, a creative Frontend Developer with a passion for building responsive, user-focused web applications. Currently exploring the exciting worlds of Metaverse and AI, I combine modern web technologies like React and Next.js with innovative solutions to craft seamless digital experiences. Lets shape the future together!
                         </p>
 
                         {/* Skills */}
@@ -88,6 +85,19 @@ const About = () => {
                                     </div>
                                 </div>
                             ))}
+                        </div>
+
+                        {/* Skills Section for Frontend Development */}
+                        <div className="space-y-4">
+                            <h4 className="text-xl font-bold text-gray-300">Frontend Development Skills</h4>
+                            <ul className="list-disc list-inside text-gray-300">
+                                <li>HTML & CSS</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React.js</li>
+                                <li>Next.js</li>
+                                <li>Responsive Design</li>
+                                <li>Version Control (Git)</li>
+                            </ul>
                         </div>
 
                         <motion.button

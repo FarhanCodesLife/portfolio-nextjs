@@ -6,18 +6,18 @@ const Services = () => {
   const services = [
     {
       icon: <FaCode className="text-3xl" />,
-      title: "Web Development",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores"
+      title: "Responsive Web Design",
+      description: "Design and develop websites that look great on all devices (mobile, tablet, desktop)"
     },
     {
       icon: <FaPaintBrush className="text-3xl" />,
-      title: "Graphic Design",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores"
+      title: "Custom UI/UX Development",
+      description: "Develop intuitive and visually appealing interfaces"
     },
     {
-      icon: <FaChartLine className="text-3xl" />,
-      title: "Digital Marketing",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores"
+      icon: <FaCode className="text-3xl" />,
+      title: "Progressive Web Apps (PWAs)",
+      description: "Create apps with offline functionality and app-like experience"
     }
   ];
 

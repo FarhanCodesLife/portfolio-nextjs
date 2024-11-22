@@ -36,7 +36,7 @@ export default function RootLayout({
         <Providers>
           <AuthProvider>
             {/* <Navbar /> */}
-            {/* <Image src={background} alt="background" className="absolute inset-0 w-full h-full object-cover brightness-50 blur-md" /> */}
+            <Image src={background} alt="background" className="absolute inset-0 w-full h-full object-cover brightness-50 blur-lg" />
             {children}
           </AuthProvider>
         </Providers>
