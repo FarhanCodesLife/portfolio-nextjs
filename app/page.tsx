@@ -5,7 +5,6 @@ import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import AddProject from './components/AddProject';
 
 const page = () => {
   return (

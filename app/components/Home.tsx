@@ -76,7 +76,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#000000] via-[#1f1f1f] to-[#303030] text-white overflow-hidden">
+    
+    <main className="min-h-screen w-full bg-gradient-to-b from-[#000000] via-[#1f1f1f] to-[#303030] text-white overflow-hidden">
       {/* Navigation - Uncomment and update */}
      
       {/* Hero Section */}

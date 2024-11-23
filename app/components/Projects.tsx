@@ -211,7 +211,7 @@ const Projects = () => {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-6 rounded bg-gradient-to-t from-yellow-800 to-yellow-400">
+                <div className="p-6 rounded bg-gradient-to-t from-yellow-800 to-zinc-900">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-100 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
