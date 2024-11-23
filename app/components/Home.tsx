@@ -64,10 +64,10 @@ const animationVariants = {
 // Consolidated data arrays
 const navigationItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
 const socialLinks = [
-  { name: 'facebook', url: 'https://facebook.com/yourprofile', icon: FaFacebook },
+  { name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100053242969258', icon: FaFacebook },
   { name: 'twitter', url: 'https://twitter.com/yourprofile', icon: FaTwitter },
-  { name: 'instagram', url: 'https://instagram.com/yourprofile', icon: FaInstagram },
-  { name: 'linkedin', url: 'https://linkedin.com/in/yourprofile', icon: FaLinkedin }
+  { name: 'instagram', url: 'https://www.instagram.com/muhammadfarhan5668/', icon: FaInstagram },
+  { name: 'linkedin', url: 'https://www.linkedin.com/in/muhammad-farhan-09b7962a9/', icon: FaLinkedin }
 ];
 
 export default function Home() {
