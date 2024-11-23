@@ -29,7 +29,6 @@ const About = () => {
                 </motion.div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Image Section */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
