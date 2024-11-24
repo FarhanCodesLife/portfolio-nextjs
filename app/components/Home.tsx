@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useCallback } from 'react';
 import profileImage from '../asset/home.gif';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const animationVariants = {
   fadeIn: (direction: 'up' | 'down' | 'left' | 'right', delay: number) => ({
@@ -64,8 +64,8 @@ const animationVariants = {
 const navigationItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
 const socialLinks = [
   { name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100053242969258', icon: FaFacebook },
-  { name: 'twitter', url: 'https://twitter.com/yourprofile', icon: FaTwitter },
   { name: 'instagram', url: 'https://www.instagram.com/muhammadfarhan5668/', icon: FaInstagram },
+  { name: 'Github', url: 'https://twitter.com/yourprofile', icon: FaGithub },
   { name: 'linkedin', url: 'https://www.linkedin.com/in/muhammad-farhan-09b7962a9/', icon: FaLinkedin }
 ];
 
@@ -243,7 +243,7 @@ export default function Home() {
                 className="absolute rounded-2xl inset-[3px] overflow-hidden rounded-hexgon-contain"
               >
                 <Image
-                  src="../asset/home.gif"
+                  src={profileImage}
                   alt="Profile"
                   fill
                   className="object-fill bg-transparent rounded-2xl scale-"

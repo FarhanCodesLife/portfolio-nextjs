@@ -1,14 +1,14 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaCode, FaServer, FaMobile, FaDatabase } from 'react-icons/fa';
+import { FaCode,  FaJava, FaCss3, FaHtml5 } from 'react-icons/fa';
 import aboutimage from '../asset/IMG_20240907_181510_938~3.jpg'
 const About = () => {
     const skills = [
-        { name: 'Frontend Development', icon: <FaCode />, level: 95 },
-        { name: 'Backend Development', icon: <FaServer />, level: 60 },
-        { name: 'Mobile Development', icon: <FaMobile />, level: 85 },
-        { name: 'Database Management', icon: <FaDatabase />, level: 70 },
+        { name: 'Html5', icon: <FaHtml5 />, level: 95 },
+        { name: 'Css3', icon: <FaCss3 />, level: 80 },
+        { name: 'Javascript', icon: <FaJava />, level: 80 },
+        { name: 'Clean Code', icon: <FaCode />, level: 85 },
     ];
 
     return (
