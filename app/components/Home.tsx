@@ -65,7 +65,7 @@ const navigationItems = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
 const socialLinks = [
   { name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100053242969258', icon: FaFacebook },
   { name: 'instagram', url: 'https://www.instagram.com/muhammadfarhan5668/', icon: FaInstagram },
-  { name: 'Github', url: 'https://twitter.com/yourprofile', icon: FaGithub },
+  { name: 'Github', url: 'https://github.com/FarhanCodesLife', icon: FaGithub },
   { name: 'linkedin', url: 'https://www.linkedin.com/in/muhammad-farhan-09b7962a9/', icon: FaLinkedin }
 ];
 
@@ -199,9 +199,9 @@ export default function Home() {
                      before:bg-white before:opacity-20 before:transform before:translate-x-[-100%]
                      hover:before:translate-x-[100%] before:transition-transform before:duration-500"
           >
-           <a href="https://drive.google.com/file/d/1XDJNu2s1YS0fia1olcid5dnoLKjKwJfq/view">
+           <a href="https://drive.google.com/file/d/1whZmmzxcVHu81jMWvHoCZei_PgI7qQai/view">
             
-              Download CV
+              My Resume
             </a> 
           </motion.button>
         </motion.div>
