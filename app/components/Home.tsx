@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { useCallback } from 'react';
 import profileImage from '../asset/home.gif';
@@ -244,7 +243,7 @@ export default function Home() {
                 className="absolute rounded-2xl inset-[3px] overflow-hidden rounded-hexgon-contain"
               >
                 <Image
-                  src={profileImage}
+                  src="../asset/home.gif"
                   alt="Profile"
                   fill
                   className="object-fill bg-transparent rounded-2xl scale-"
