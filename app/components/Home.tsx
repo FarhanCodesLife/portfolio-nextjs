@@ -78,7 +78,6 @@ export default function Home() {
   return (
     
     <main className="min-h-screen w-full bg-gradient-to-b from-[#000000] via-[#1f1f1f] to-[#303030] text-white overflow-hidden">
-      {/* Navigation - Uncomment and update */}
      
       {/* Hero Section */}
       <section className="container m-20 mx-auto px-4 py-20 grid md:grid-cols-2 gap-8 items-center">
