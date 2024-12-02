@@ -8,7 +8,7 @@ const About = () => {
         { name: 'Html5', icon: <FaHtml5 />, level: 95 },
         { name: 'Css3', icon: <FaCss3 />, level: 80 },
         { name: 'Javascript', icon: <FaJava />, level: 80 },
-        { name: 'Clean Code', icon: <FaCode />, level: 85 },
+        { name: 'Typescript', icon: <FaCode />, level: 70 },
     ];
 
     return (
