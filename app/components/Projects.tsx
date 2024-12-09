@@ -38,6 +38,16 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
+    title: "Furniture E-commerce App",
+    description: "I built this website in just 8 hours for the Figma Hackathon at GIAIC—pushing creativity and speed to the next level!",
+    category: "Web Application",
+    image: image12, // Replace with the actual image pth
+    technologies: ["Next.js", "shadcn/ui", "Tailwind CSS",],
+    liveLink: "https://furniroecomerce.vercel.ap", // Add live link if available
+    githubLink: "https://github.com/FarhanCodesLife/Figma-Hackathon-In-GIAIC",
+  },
+  {
+    id: 2,
     title: "Meme Create App",
     description: "A fun meme creation app with an API integration for meme templates.",
     category: "Web Application",
@@ -47,7 +57,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/Meme-Create-App",
   },
   {
-    id: 2,
+    id: 3,
     title: "Boss Shoes E-Commerce Platform",
     description: "An e-commerce platform for shoe shopping built with Next.js.",
     category: "E-Commerce",
@@ -57,7 +67,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/Boss-Shoes-nextjs",
   },
   {
-    id: 3,
+    id: 4,
     title: "Weather App",
     description: "A React-based weather forecasting app using a weather API.",
     category: "Web Application",
@@ -67,7 +77,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/wheather-app-react",
   },
   {
-    id: 4,
+    id: 5,
     title: "Resume Builder App",
     description: "An interactive resume builder with Firebase backend.",
     category: "Web Application",
@@ -77,7 +87,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/Resume-build",
   },
   {
-    id: 5,
+    id: 6,
     title: "Coffee Shop Website",
     description: "A responsive website for a coffee shop with elegant design.",
     category: "Web Development",
@@ -87,7 +97,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/coffee-shop",
   },
   {
-    id: 6,
+    id: 7,
     title: "Blogging App",
     description: "A blogging platform with post creation and commenting features.",
     category: "Web Application",
@@ -97,7 +107,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/Bloging-App-",
   },
   {
-    id: 7,
+    id: 8,
     title: "To-Do App",
     description: "A simple to-do list application built with React.",
     category: "Web Application",
@@ -107,7 +117,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/todo-app-by-farhan",
   },
   {
-    id: 8,
+    id: 9,
     title: "Quiz App",
     description: "An interactive quiz application for testing knowledge.",
     category: "Web Application",
@@ -117,7 +127,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/quiz-app",
   },
   {
-    id: 9,
+    id: 10,
     title: "Buy and Sell Corner",
     description: "A marketplace platform for buying and selling items.",
     category: "Web Application",
@@ -127,7 +137,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FarhanCodesLife/buy-and-sell-cornner",
   },
   {
-    id: 10,
+    id: 11,
     title: "Expenses Management Sheet",
     description: "A real-time expense management tool with Firebase.",
     category: "Web Application",
@@ -137,7 +147,7 @@ const projectsData: Project[] = [
     githubLink: "https://expenses-management-sheet.web.app/", // Add GitHub link if available
   },
   {
-    id: 11,
+    id: 12,
     title: "SNP Responsive Website",
     description: "A fully responsive website built using modern web standards.",
     category: "Web Development",
