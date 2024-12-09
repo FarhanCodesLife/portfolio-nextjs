@@ -17,6 +17,7 @@ import image8 from "@/app/asset/quiz.png"
 import image9 from "@/app/asset/buy and sell.png"
 import image10 from "@/app/asset/expance.png"
 import image11 from "@/app/asset/snp.png"
+import image12 from "@/app/asset/12.png"
 
 
 // import image2 from "@/app/asset/images.jpeg"

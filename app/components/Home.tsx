@@ -206,7 +206,6 @@ export default function Home() {
           </motion.button>
         </motion.div>
 
-        {/* Right Content - Profile Image with enhanced effects */}
         <motion.div
           variants={animationVariants.fadeIn('left', 0.5)}
           initial="hidden"
