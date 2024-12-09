@@ -50,7 +50,7 @@ const projectsData: Project[] = [
     id: 2,
     title: "Meme Create App",
     description: "A fun meme creation app with an API integration for meme templates.",
-    category: "Web Application",
+    category: "E-Commerce",
     image: image1, // Replace with the actual image pth
     technologies: ["React", "API Integration", "CSS"],
     liveLink: "https://meme-create-app-pp7l.vercel.app/", // Add live link if available
