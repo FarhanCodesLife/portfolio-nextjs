@@ -43,7 +43,7 @@ const projectsData: Project[] = [
     category: "E-Commerce",
     image: image12, // Replace with the actual image pth
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS",],
-    liveLink: "https://furniroecomerce.vercel.ap", // Add live link if available
+    liveLink: "https://furniroecomerce.vercel.app", // Add live link if available
     githubLink: "https://github.com/FarhanCodesLife/Figma-Hackathon-In-GIAIC",
   },
   {
