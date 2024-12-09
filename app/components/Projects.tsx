@@ -39,8 +39,8 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "Furniture E-commerce App",
-    description: "I built this website in just 8 hours for the Figma Hackathon at GIAIC—pushing creativity and speed to the next level!",
-    category: "Web Application",
+    description: "I built this website in just 8 hours for the Figma Hackathon at GIAIC.",
+    category: "E-Commerce",
     image: image12, // Replace with the actual image pth
     technologies: ["Next.js", "shadcn/ui", "Tailwind CSS",],
     liveLink: "https://furniroecomerce.vercel.ap", // Add live link if available
@@ -50,7 +50,7 @@ const projectsData: Project[] = [
     id: 2,
     title: "Meme Create App",
     description: "A fun meme creation app with an API integration for meme templates.",
-    category: "E-Commerce",
+    category: "Web Application",
     image: image1, // Replace with the actual image pth
     technologies: ["React", "API Integration", "CSS"],
     liveLink: "https://meme-create-app-pp7l.vercel.app/", // Add live link if available
